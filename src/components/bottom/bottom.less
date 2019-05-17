@@ -1,0 +1,67 @@
+.bottom {
+    font-size: 14PX;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 50PX;
+    bottom: 10PX;
+    left: 0PX;
+    .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        background-color: #3A3B36;
+        color:#89888D;
+        border-radius: 50PX;
+        height: 50PX;
+        .number {
+            width: 20PX;
+            height: 20PX;
+            line-height: 20PX;
+            color: #fff;
+            text-align: center;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+            margin-left: 50PX;
+            margin-top: -10PX;
+        }
+        .img {
+            width: 50PX;
+            height: 50PX;
+            margin-left: 10PX;
+        }
+        .price {
+            display: flex;
+            flex-direction: column;
+            .money {
+                color: #fff;
+                font-size: 18PX;
+            }
+            .info {
+                -webkit-transform: scale(0.7);
+                margin-left: -18PX;
+            }
+        }
+        .desc {
+            height: 50PX;
+            line-height: 50PX;
+        }
+        .submit {
+            height: 50PX;
+            line-height: 50PX;
+            margin-right: 10PX;
+        }
+        .pay{
+            background-color: #EE673D;
+            color:#fff;
+            font-size: 16PX;
+            width: 100PX;
+            text-align: center;
+            border-radius: 0 50PX 50PX 0;
+            margin-right: 0PX;
+        }
+    }
+}
