@@ -34,8 +34,8 @@ export default class Category extends Component {
     return (
       <View className='category'>
         {
-          category.map(cate => {
-            return <Text onClick={this.handleClick.bind(this, cate)} className={'name ' + (cate.id==selectId?'selected':'')}>{cate.name}</Text>
+          category.map((cate, index) => {
+            return <Text key={index} onClick={this.handleClick.bind(this, cate)} className={'name ' + (cate.id==selectId?'selected':'')}>{cate.name}</Text>
           })
         }
       </View>

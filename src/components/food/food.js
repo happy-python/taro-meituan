@@ -64,7 +64,7 @@ export default class Food extends Component {
           <AtTabsPane current={current} index={0}>
             <View className='food'>
               <Category onChangeCategory={this.changeCategory.bind(this)} />
-              <FoodList category={category} foods={foods}/>
+              <FoodList category={category} foods={foods} style='width:100%' />
             </View>
           </AtTabsPane>
           <AtTabsPane current={current} index={1}>评价</AtTabsPane>

@@ -8,6 +8,11 @@ export default class FoodList extends Component {
     super(...arguments)
   }
 
+  static defaultProps = {
+    category: '',
+    foods: []
+  }
+
   render () {
     const {category, foods} = this.props;
 
@@ -17,7 +22,7 @@ export default class FoodList extends Component {
         {
           foods.map(food => {
             return (
-              <View className='food-list'>
+              <View className='food-list' key={food.id}>
                 <Image className='food-list-img' src={food.img==1?require('../../assets/images/1.jpg'):require('../../assets/images/2.jpg')} />
                 <View className='food-list-text'>
                   <Text className='name'>{food.name}</Text>

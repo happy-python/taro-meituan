@@ -15,6 +15,10 @@ export default class Addcut extends Component {
     this.key = cacheKey
   }
 
+  static defaultProps = {
+    food: {}
+  }
+
   componentWillMount () {
     // 监听事件
     event.on('changeCategory', ()=>{
@@ -59,7 +63,7 @@ export default class Addcut extends Component {
           if (this.state.number == 0) {
             delete cacheFoods[id]
           } else {
-            cacheFoods[id] = {number: this.state.number}
+            cacheFoods[id].number = this.state.number
           }
           Taro.setStorageSync(this.key, cacheFoods)
           

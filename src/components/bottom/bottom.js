@@ -3,6 +3,7 @@ import { View, Text, Image } from '@tarojs/components'
 import './bottom.less'
 import emptyPng from '../../assets/images/emptystore.png'
 import foodPng from '../../assets/images/foodstore.png'
+import event from '../../utils/events'
 import { cacheKey } from '../../utils/common'
 
 export default class Bottom extends Component {
